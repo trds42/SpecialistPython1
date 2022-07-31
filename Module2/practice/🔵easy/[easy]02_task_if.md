@@ -19,6 +19,13 @@
 
 ```python
 # TODO: you code here...
+money = int(input('Money: '))
+price = int(input('Price: '))
+if money-price>=0:
+    change = money-price
+    print(change)
+else:
+    print("You're poor.")
 ```
 
 ---

@@ -18,6 +18,11 @@
 n = int(input("n: "))
 
 # TODO: you code here...
+n = int(input('n = '))
+i = 1
+while i <= n:
+    print("I learn Python")
+    i += 1
 ```
 
 ---

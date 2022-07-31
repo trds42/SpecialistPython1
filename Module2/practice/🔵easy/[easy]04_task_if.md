@@ -22,6 +22,16 @@
 
 ```python
 # TODO: you code here...
+x = int(input('x = '))
+y = int(input('y = '))
+xr = int(input('xr = '))
+yr = int(input('yr = '))
+r = int(input('r = '))
+
+if xr-r <= x <= xr+r and yr-r <= y <= yr+r:
+    print('Yes')
+else:
+    print('No')
 ```
 
 ---

@@ -21,9 +21,8 @@
 # TODO: you code here...
 money = int(input('Money: '))
 price = int(input('Price: '))
-if money-price>=0:
-    change = money-price
-    print(change)
+if money >= price:
+    print(money-price)
 else:
     print("You're poor.")
 ```

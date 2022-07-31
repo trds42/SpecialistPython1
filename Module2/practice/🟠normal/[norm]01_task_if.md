@@ -16,6 +16,12 @@
 
 ```python
 # TODO: you code here...
+n = int(input('n = '))
+
+if 100 <= n <= 999 or -100 >= n >= -999:
+    print('Yes')
+else:
+    print('No')
 ```
 
 ---

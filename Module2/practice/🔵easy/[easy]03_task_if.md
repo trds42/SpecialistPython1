@@ -16,6 +16,14 @@
 
 ```python
 # TODO: you code here...
+a = int(input('a = '))
+b = int(input('b = '))
+c = int(input('c = '))
+
+if a+b>c and a+c>b and c+b>a:
+    print('Exists')
+else:
+    print("Doesn't exist")
 ```
 
 ---

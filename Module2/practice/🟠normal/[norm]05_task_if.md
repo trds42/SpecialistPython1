@@ -16,6 +16,18 @@
 
 ```python
 # TODO: you code here...
+m = int(input("m = "))
+
+if 3 <= m <= 5:
+    print('Spring')
+elif 6 <= m <= 8:
+    print('Summer')
+elif 9 <= m <= 11:
+    print('Autumn')
+elif 1 <= m <= 2 or m == 12:
+    print('Winter')
+else:
+    print('No such month')
 ```
 
 ---

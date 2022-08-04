@@ -37,5 +37,12 @@ n = 12
 
 ```python
 # TODO: you code here...
+cost = float(input('cost = '))
+n = int(input('n = '))
+
+i = 1
+while i <= n:
+    print(i, '=', i * cost, 'rub')
+    i += 1
 ```
 

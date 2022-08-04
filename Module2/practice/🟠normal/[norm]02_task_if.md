@@ -16,6 +16,9 @@
 
 ```python
 # TODO: you code here...
+n = int(input("n = "))
+
+print(n % 10 ==5)
 ```
 
 ---

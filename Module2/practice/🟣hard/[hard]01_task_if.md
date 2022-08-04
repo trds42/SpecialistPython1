@@ -19,6 +19,18 @@
 
 ```python
 # TODO: you code here...
+n = int(input('n = '))
+
+n1 = n // 100
+n2 = n % 100
+n21 = n2 // 10
+n22 = n2 % 10
+n2 = n22 * 10 + n21
+
+if n1 == n2:
+    print('Yes')
+else:
+    print('No')
 ```
 
 ---

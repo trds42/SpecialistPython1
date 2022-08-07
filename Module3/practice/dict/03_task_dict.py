@@ -30,6 +30,17 @@ staff = [
 print("Имя и Фамилию сотрудника с самой высокой зарплатой:")
 
 # TODO: your code here
+max_salary = {
+        'name': '',
+        'surname': '',
+        'salary': 0
+    }
+for person in staff:
+    if person['salary'] > max_salary['salary']:
+        max_salary['salary'] = person['salary']
+        max_salary['name'] = person['name']
+        max_salary['surname'] = person['surname']
+print(max_salary['name'], max_salary['surname'])
 
 print("Имя и Фамилию сотрудника с самой низкой зарплатой:")
 

@@ -10,5 +10,6 @@ dollar_rate = 74.12
 # TODO: your code here
 dollar_rate = 74.12
 price = float(item['price'])
-dollar_price = price / dollar_rate
-print(dollar_price)
+count = float(item['count'])
+dollar_price = price * count / dollar_rate
+print(round(dollar_price, 2))

@@ -2,3 +2,13 @@
 # Вывести на экран сумму всех положительных элементов.
 
 # TODO: your code here
+x = []
+n = int(input('n = '))
+while n > 0:
+    x.append(int(input('Enter number: ')))
+    n -= 1
+summa = 0
+for el in x:
+    if el > 0:
+        summa += el
+print(summa)

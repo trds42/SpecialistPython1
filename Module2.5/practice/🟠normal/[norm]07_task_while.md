@@ -17,6 +17,24 @@
 
 ```python
 # TODO: you code here...
+a = int(input('a = '))
+b = int(input('b = '))
+
+count = 0
+n = a
+while n <= b:
+    i = 1
+    summa = 0
+    while i < n:
+        if n % i == 0:
+            summa += i
+        i += 1
+    if n == summa:
+        print(n, end=' ')
+        count += 1
+    n += 1
+print()
+print(count, 'perfect numbers.')
 ```
 
 ---

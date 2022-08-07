@@ -17,6 +17,17 @@
 
 ```python
 # TODO: you code here...
+n = int(input('n = '))
+
+i = 2
+simple = True
+while i < n:
+    if n % i == 0:
+        print(i, end=' ')
+        simple = False
+    i += 1
+if simple:
+    print("It's a simple number")
 ```
 
 ---

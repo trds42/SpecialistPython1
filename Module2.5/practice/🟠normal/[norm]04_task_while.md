@@ -23,6 +23,17 @@
 
 ```python
 # TODO: you code here...
+n = int(input('n = '))
+
+i = 1
+summa = 0
+while i <= n:
+    j = 1
+    while j <= i:
+        print(j, end='')
+        j += 1
+    print()
+    i += 1
 ```
 
 ---

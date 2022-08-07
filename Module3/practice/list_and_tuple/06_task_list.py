@@ -9,4 +9,4 @@ x = []
 for i in range(first_number, second_number):
     if i % 3 == 0:
         x.append(i)
-print(x)
+print(*x)

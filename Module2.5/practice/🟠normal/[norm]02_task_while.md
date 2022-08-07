@@ -17,6 +17,14 @@
 
 ```python
 # TODO: you code here...
+count = 0
+while True:
+    n = input('n = ')
+    if n == 'stop':
+        break
+    if int(n) > 0:
+        count += 1
+print(count, 'positive numbers')
 ```
 
 ---

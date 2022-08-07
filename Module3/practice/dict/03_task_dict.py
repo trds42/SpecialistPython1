@@ -45,7 +45,7 @@ print(max_salary['name'], max_salary['surname'])
 print("Имя и Фамилию сотрудника с самой низкой зарплатой:")
 
 # TODO: your code here
-min = 100000
+min = staff[0]['salary']
 index = 0
 for i in range(len(staff)):
     if staff[i]['salary'] < min:

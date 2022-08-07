@@ -64,4 +64,6 @@ print("Количество однофамильцев в организации
 print("*Список всех сотрудников(Имя и Фамилию) в порядке возрастания их зарплаты")
 
 # TODO: your code here
-print(sorted(staff, key=lambda x: x['salary']))
+staff = sorted(staff, key=lambda x: x['salary'])
+for person in staff:
+    print(person['name'], person['surname'])

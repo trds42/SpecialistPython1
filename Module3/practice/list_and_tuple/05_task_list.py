@@ -6,6 +6,16 @@
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # TODO: your code here
+max_length = 0
+for fruit in fruits:
+    length_fruit = len(fruit)
+    if length_fruit > max_length:
+        max_length = length_fruit
+i = 1
+for fruit in fruits:
+    space = ' ' * (max_length - len(fruit))
+    print(f'{i}. {space} {fruit}')
+    i += 1
 
 # Пример вывода:
 # 1. яблоко

@@ -66,6 +66,16 @@ print(summa / count)
 print("Количество однофамильцев в организации")
 
 # TODO: your code here
+count = 0
+for person in staff:
+    surname = person['surname']
+    match_count = 0
+    for another_person in staff:
+        if another_person['surname'] == surname:
+            match_count += 1
+    if match_count > 1:
+        count += 1
+print(count)
 
 print("*Список всех сотрудников(Имя и Фамилию) в порядке возрастания их зарплаты")
 

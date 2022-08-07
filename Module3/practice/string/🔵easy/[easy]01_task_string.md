@@ -17,6 +17,7 @@
 ```python
 string = input("Введите произвольный текст: ")
 # TODO: you code here...
+print(string[0], string[-1])
 ```
 
 ---

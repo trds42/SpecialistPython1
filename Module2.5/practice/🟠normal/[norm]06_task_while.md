@@ -17,6 +17,18 @@
 
 ```python
 # TODO: you code here...
+n = int(input('n = '))
+
+i = 1
+summa = 0
+while i < n:
+    if n % i == 0:
+        summa += i
+    i += 1
+if n == summa:
+    print("It's perfect!")
+else:
+    print("It's not perfect")
 ```
 
 ---

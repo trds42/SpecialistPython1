@@ -56,6 +56,12 @@ print(staff[index]['name'], staff[index]['surname'])
 print("Среднеарифметическую зарплату всех сотрудников")
 
 # TODO: your code here
+count = 0
+summa = 0
+for person in staff:
+    summa += person['salary']
+    count += 1
+print(summa / count)
 
 print("Количество однофамильцев в организации")
 

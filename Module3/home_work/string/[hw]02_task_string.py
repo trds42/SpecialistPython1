@@ -3,32 +3,20 @@
 # если слова на эту букву нет, выведите "слов на б нет"
 text = input('text: ')
 
-start = 0
-end = 0
 if text[0] == 'б':
-    for i in range(len(text)):
-        if text[i] == ' ':
-            end = i
-            break
-    if end == 0:
-        print(text)
-    else:
+    end = text.find(' ')
+    if end >= 0:
         print(text[:end])
-
-else:
-    for i in range(len(text)):
-        if text[i] == ' ':
-            if text[i+1] == 'б':
-                start = i+1
-                break
-    if start == 0:
-        print('No words with "б"')
     else:
-        for i in range(start, len(text)):
-            if text[i] == ' ':
-                end = i
-                break
-        if end == 0:
-            print(text[start:])
-        else:
+        print(text)
+else:
+    find_start = text.find(' б')
+    start = find_start + 1
+    if find_start >= 0:
+        end = text.find(' ', start)
+        if end >= 0:
             print(text[start:end])
+        else:
+            print(text[start:])
+    else:
+        print('No words with "б"')

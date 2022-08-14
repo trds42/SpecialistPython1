@@ -18,6 +18,12 @@
 text = "В теории, теория и практика неразделимы. На практике это не так."
 vowels = "ауоыэяюёие"
 # TODO: you code here...
+text = text.lower()
+count = 0
+for char in text:
+    if char in vowels:
+        count += 1
+print(count)
 ```
 
 ---

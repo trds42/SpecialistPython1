@@ -8,7 +8,7 @@ import random
 def gen_list(size, of, to):
     lst = []
     for i in range(size):
-        lst.append(random.randint(of, to+1))
+        lst.append(random.randint(of, to))
     return lst
 
 

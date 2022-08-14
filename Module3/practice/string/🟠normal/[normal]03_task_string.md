@@ -19,6 +19,15 @@
 ```python
 text = "Мама мыла раму. Устала мама, но наконец отмыла раму-)"
 # TODO: you code here...
+string = input('str = ')
+string = string.lower()
+string = string.replace(',', '')
+lst = string.split(' ')
+count = 0
+for word in lst:
+    if word == 'мама':
+        count += 1
+print(count)
 ```
 
 ---

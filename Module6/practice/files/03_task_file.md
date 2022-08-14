@@ -31,6 +31,20 @@
 # преобразовав каждую цену к числу(цены в файле хранятся в виде строк)
 # А затем, работам с привычным списком, выполните задания
 prices = []
+
+path = "sold.txt"
+
+prices_list = []
+with open(path, "r", encoding='UTF-8') as f:
+    for line in f:
+        lst = line.split(' ')
+        for el in lst:
+            if el != '':
+                prices_list.append(float(el.rstrip()))
+print(prices_list)
+print('summa', sum(prices_list))
+print('max', max(prices_list))
+print('min', min(prices_list))
 ```
 
 ---

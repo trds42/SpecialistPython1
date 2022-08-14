@@ -21,11 +21,14 @@
 path = "dir/limericks.txt"  # вместо dir подставь название папки с файлом.
 # Или удалите dir, если limericks.txt в той же папке, что и питоновский файл
 
-# Открываем файл на чтение
-f = open(path, "r")
-# В переменную line считываем строку за стройкой из файла(f)
-for line in f:
-    ...
+lst = []
+with open(path, "r", encoding='UTF-8') as f:
+    for line in f:
+        lst.append(line.rstrip().replace('.', ''))
+newpath = 'limericks_clean.txt'
+with open(newpath, "w", encoding='UTF-8') as f:
+    for line in lst:
+        f.write(line + "\n")
 ```
 
 ---

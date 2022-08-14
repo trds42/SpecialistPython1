@@ -26,7 +26,7 @@ newpath = 'limericks_clean.txt'
 with open(path, "r", encoding='UTF-8') as f:
     with open(newpath, "w", encoding='UTF-8') as new_f:
         for line in f:
-            new_f.write(line.rstrip().replace('.', '')+ "\n")
+            new_f.write(line.replace('.', ''))
 ```
 
 ---

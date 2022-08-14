@@ -18,6 +18,16 @@
 
 ```python
 # TODO: you code here...
+string = input('str = ')
+
+if string.startswith('id:'):
+    string_slice = string[3:]
+    if string_slice.isdigit():
+        print('Yes')
+    else:
+        print('No')
+else:
+    print('No')
 ```
 
 ---

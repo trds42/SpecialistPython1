@@ -23,6 +23,13 @@
 ```python
 password = input("Enter password: ")
 # TODO: you code here...
+string = input('str = ')
+strong = 'No'
+if len(string) >= 6:
+    if string[0].isupper():
+        if '#' in string:
+            strong = 'Yes'
+print(strong)
 ```
 
 ---

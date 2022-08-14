@@ -21,14 +21,12 @@
 path = "dir/limericks.txt"  # вместо dir подставь название папки с файлом.
 # Или удалите dir, если limericks.txt в той же папке, что и питоновский файл
 
-lst = []
-with open(path, "r", encoding='UTF-8') as f:
-    for line in f:
-        lst.append(line.rstrip().replace('.', ''))
+path = "limericks.txt"
 newpath = 'limericks_clean.txt'
-with open(newpath, "w", encoding='UTF-8') as f:
-    for line in lst:
-        f.write(line + "\n")
+with open(path, "r", encoding='UTF-8') as f:
+    with open(newpath, "w", encoding='UTF-8') as new_f:
+        for line in f:
+            new_f.write(line.rstrip().replace('.', '')+ "\n")
 ```
 
 ---

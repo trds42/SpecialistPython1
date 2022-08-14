@@ -12,6 +12,10 @@ def gen_list(size, of, to):
     return lst
 
 
+def gen_list2(size, of, to):
+    lst = [random.randit(of, to) for _ in range(size)]
+
+
 n = int(input('n = '))
 a = int(input('a = '))
 b = int(input('b = '))

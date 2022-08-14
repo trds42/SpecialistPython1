@@ -22,6 +22,10 @@ text = "Мама мыла раму. Устала мама, но наконец �
 string = input('str = ')
 string = string.lower()
 string = string.replace(',', '')
+string = string.replace('.', '')
+string = string.replace('-', '')
+string = string.replace(')', '')
+string = string.replace('(', '')
 lst = string.split(' ')
 count = 0
 for word in lst:

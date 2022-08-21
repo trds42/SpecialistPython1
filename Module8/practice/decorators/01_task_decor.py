@@ -12,13 +12,11 @@ def stars(func):
     def wrapper():
         res = func()
         n = len(res) + 4
-        print("*" * n)
-        print('*', res, '*')
-        print("*" * n)
+        print('*' * n + f'\n* {res} *\n' + '*' * n)
     return wrapper
 
 @stars
 def my_function():
-    return input('Введите текст: ')
+    return input("Введите текст: ")
 
 my_function()

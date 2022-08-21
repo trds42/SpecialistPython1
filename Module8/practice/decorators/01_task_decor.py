@@ -19,6 +19,6 @@ def stars(func):
 
 @stars
 def my_function():
-    return "Hello"
+    return input('Введите текст: ')
 
 my_function()

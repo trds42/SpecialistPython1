@@ -23,6 +23,21 @@
 
 ```python
 # TODO: you code here...
+result = {}
+for i in range(ord('А'), ord('Я')+1):
+    result[chr(i)] = []
+
+with open('data/fruits.txt', 'r', encoding='UTF-8') as file:
+    for line in file:
+        if len(line) != 1:
+            result[line[0].upper()].append(line)
+
+for key, value in result.items():
+    if len(value) > 0:
+        file_name = f'data/fruits_{key}.txt'
+        with open(file_name, 'a', encoding='UTF-8') as newfile:
+            for el in value:
+                newfile.write(el)
 ```
 
 ---

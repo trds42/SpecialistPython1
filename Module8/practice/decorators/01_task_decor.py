@@ -7,3 +7,18 @@
 # *23*
 # ****
 # (кол-во звездочек зависит от длины возвращаемого значения)
+
+def stars(func):
+    def wrapper():
+        res = func()
+        n = len(res) + 4
+        print("*" * n)
+        print('*', res, '*')
+        print("*" * n)
+    return wrapper
+
+@stars
+def my_function():
+    return "Hello"
+
+my_function()

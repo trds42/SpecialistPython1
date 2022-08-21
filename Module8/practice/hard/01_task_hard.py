@@ -5,11 +5,19 @@
 # а значениями кол-во банкнот. Если пользователь запросил некорректную сумму,
 # нужно вывести дружественное сообщение об ошибке.
 # Результат работы программы - текстовый отчет о номиналах и количестве купюр.
-snake_n = int(input('Summa = '))
+snake_input = int(input('Summa = '))
+snake_n = snake_input
 result = {key: 0 for key in [5000, 2000, 1000, 500]}
 for banknote, count in result.items():
     if snake_n >= banknote:
         count = snake_n // banknote
         result[banknote] = count
         snake_n -= banknote * count
-print(result)
+if snake_n > 0:
+    print(f"Please input a sum kratnoe 500. We don't have {snake_n} rubles.")
+else:
+    print(result)
+    with open("result.txt", "w", encoding="UTF-8") as log:
+        log.write(f"For {snake_input} rubles you get:\n")
+        for banknote, count in result.items():
+            log.write(f"{count} of {banknote} banknotes\n")

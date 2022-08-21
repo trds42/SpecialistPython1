@@ -5,3 +5,11 @@
 # а значениями кол-во банкнот. Если пользователь запросил некорректную сумму,
 # нужно вывести дружественное сообщение об ошибке.
 # Результат работы программы - текстовый отчет о номиналах и количестве купюр.
+snake_n = int(input('Summa = '))
+result = {key: 0 for key in [5000, 2000, 1000, 500]}
+for banknote, count in result.items():
+    if snake_n >= banknote:
+        count = snake_n // banknote
+        result[banknote] = count
+        snake_n -= banknote * count
+print(result)

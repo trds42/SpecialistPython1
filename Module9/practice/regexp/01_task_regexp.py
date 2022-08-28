@@ -13,7 +13,7 @@ text = "Дано произвольное предложение. Слова р�
 pattern = r'^\w+'
 found = re.findall(pattern, text)
 print(found)
-pattern = r'\w\w*\s?'
+pattern = r'\w\w*[^\s\W]?'
 found = re.findall(pattern, text)
 print(found)
 pattern = r"\W(?!\S)"

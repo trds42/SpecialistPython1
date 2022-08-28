@@ -16,8 +16,8 @@ surnames = ['Kazakov', 'Petrov', 'Usakov']
 professions = ['Builder', 'Programmer', 'Manager']
 result = []
 for i in range(100):
-    current_worker = {'Name' : random.choice(names), 'Surname' : random.choice(surnames),
-                      'Age' : random.randint(5, 80), 'Profession' : random.choice(professions),
-                      'Salary' : random.randint(0, 100000000)}
+    current_worker = {'Name': random.choice(names), 'Surname': random.choice(surnames),
+                      'Age': random.randint(5, 80), 'Profession': random.choice(professions),
+                      'Salary': random.randint(0, 100000000)}
     result.append(current_worker)
 print(result)

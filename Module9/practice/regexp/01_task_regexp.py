@@ -6,4 +6,16 @@
 # 4) все слова начинающиеся на согласную букву
 # 5) все уникальные(без дубликатов) знаки препинания
 
-text = ...
+import re
+
+text = "Дано произвольное предложение. Слова разделены пробелами, предложение содержит и знаки препинания."
+
+pattern = r'^\w+'
+found = re.findall(pattern, text)
+print(found)
+pattern = r'\w\w*\s?'
+found = re.findall(pattern, text)
+print(found)
+pattern = r"\W(?!\S)"
+found = re.findall(pattern, text)
+print(found)
